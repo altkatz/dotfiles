@@ -1,3 +1,8 @@
+sudo apt-get install -y git
+sudo apt-get install -y curl
+sudo add-apt-repository -y ppa:cassou/emacs
+sudo apt-get -qq update
+sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 sudo apt-get install zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
