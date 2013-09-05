@@ -11,7 +11,7 @@ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
-nvm use v0.10.12
+nvm use v0.101.
 
 npm install -g jshint
 
@@ -28,3 +28,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 # ruby setup
 curl -L https://get.rvm.io | bash -s stable --ruby
 gem install pry
+
+# sql
+sudo apt-get install libpq-dev postgresql-client postgresql
