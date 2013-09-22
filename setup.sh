@@ -1,4 +1,4 @@
-sudo apt-get install -y git
+sudo apt-get install -y git-core
 sudo apt-get install -y curl
 sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
@@ -18,8 +18,11 @@ nvm use v0.101.
 npm install -g jshint
 
 # python setup
-sudo curl -O http://python-distribute.org/distribute_setup.py | python
-sudo curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
+cd ~/
+sudo curl -O http://python-distribute.org/distribute_setup.py
+sudo python distribute_setup.py
+sudo curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+sudo python get-pip.py
 sudo pip install virtualenv
 
 sudo pip install virtualenvwrapper
@@ -41,7 +44,7 @@ sudo cp src/redis-server /usr/local/bin/
 sudo cp src/redis-cli /usr/local/bin/
 
 # sql
-sudo apt-get install libpq-dev postgresql-client postgresql
+sudo apt-get install -y libpq-dev postgresql-client postgresql
 #sudo -u postgres psql postgres
 #sudo -u postgres createdb mydb
 #adduser news_pg
