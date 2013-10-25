@@ -7,7 +7,8 @@ cd ~
 sudo apt-get install zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 sudo chsh -s /bin/zsh
-
+sudo apt-get install -y xclip
+sudo apt-get install -y xsel
 # js setup
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
